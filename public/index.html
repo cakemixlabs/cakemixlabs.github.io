@@ -12,8 +12,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
 </head>
 
 <body>
@@ -66,9 +66,10 @@
 
     <div class="container-fluid">
         <div class="col" id="email-section">
-            <form class="form-group" id="email-input-section">
+            <form action="/sign_up" method="post" class="form-group" id="email-input-section">
                 <label for="email-input-box">Sign up for product news</label>
-                <input class="form-control" id="email-input-box" type="text" placeholder="email address" aria-label="Email">
+                <input class="form-control" name="email" id="email-input-box" type="email" placeholder="email address" aria-label="Email" required>
+                <!-- <input class="box" type="email" name="email" id="email" placeholder="Enter your E-Mail " required /><br> -->
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign up</button>
             </form>
         </div>
