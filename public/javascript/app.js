@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $("a").on('click', function (event) {
+    $("a").on("click", function (event) {
 
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
@@ -20,4 +20,24 @@ $(document).ready(function () {
             });
         } // End if
     });
+
+
+    // set up on click ajax call for submitting email address
+    $("#email-sign-up-button").on("click", function (event) {
+        event.preventDefault();
+
+        var emailAddress = {
+            body: $("#email-input-box").val().trim()
+        }
+        console.log("email address is ", emailAddress)
+
+        $.ajax("/", {
+            type: "POST",
+            data: emailAddress
+        }).then(
+            function (data) { }
+        );
+    });
+
+
 });
