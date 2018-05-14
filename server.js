@@ -3,6 +3,7 @@ var express = require("express");
 var mongo = require("mongodb");
 var bodyParser = require("body-parser");
 
+// set the port to either the environment or 3000
 var PORT = process.env.PORT || 3000;
 
 // initialize Express
@@ -19,47 +20,48 @@ app.use(bodyParser.json({
 // serve the public directory
 app.use(express.static("public"));
 
-//var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/cakemix";
-//var new_db = "mongodb://localhost/cakemix";
-
-app.get('/',function(req,res){
-	res.set({
-		'Access-Control-Allow-Origin' : '*'
-	});
-	return res.redirect('/public/index.html');
-}).listen(3000);
-
-console.log("Server listening at : 3000");
+// set the MongoDB to environment or localhost
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost";
 
 
+// app.get('/', function (req, res) {
+//     res.set({
+//         'Access-Control-Allow-Origin': '*'
+//     });
+//     return res.redirect('/public/index.html');
+// })
 
-// Sign-up function starts here. . .
-app.post('/sign_up', function (req, res) {
+
+// create post route for email sign up
+app.post('/signup', function (req, res) {
+    // use req.body for the contents of the email
     var email = req.body;
-    console.log("email is ",  email);
+    console.log("email is ", email);
 
-    mongo.connect('mongodb://localhost', function (err, client) {
+    // connect to the database and the collection
+    mongo.connect(MONGODB_URI, function (err, client) {
         if (err) throw err;
 
-        var db = client.db('cakemix');
+        var db = client.db("cakemix");
+
         console.log("connected to database successfully");
+
+        // insert text into database collection
         db.collection("emails").insertOne(email, (err, collection) => {
             if (err) throw err;
             console.log("Record inserted successfully");
-            console.log(collection);
         });
     });
 
-    console.log("DATA is " + JSON.stringify(email));
     res.set({
         'Access-Control-Allow-Origin': '*'
     });
-   // return res.redirect('./public/success.html'); 
-  return res.sendStatus(200);
+
+    return res.sendStatus(200);
 
 });
 
 // listen for the routes
-// app.listen(PORT, function () {
-//     console.log("App is running");
-// });
+app.listen(PORT, function () {
+    console.log("App is running");
+});
