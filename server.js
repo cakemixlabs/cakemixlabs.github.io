@@ -33,7 +33,7 @@ var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost";
 
 
 // create post route for email sign up
-app.post('/', function (req, res) {
+app.post('/signup', function (req, res) {
     // use req.body for the contents of the email
     var email = req.body;
     console.log("email is ", email);

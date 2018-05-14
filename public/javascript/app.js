@@ -23,21 +23,39 @@ $(document).ready(function () {
 
 
     // set up on click ajax call for submitting email address
-    $("#email-sign-up-button").on("submit", function (event) {
+    $("#email-input-section").on("submit", function (event) {
+
         event.preventDefault();
+        var $emailText = $("#email-input-box");
 
         var emailAddress = {
-            body: $("#email-input-box").val().trim()
-        }
+            body: $emailText.val().trim()
+        };
         console.log("email address is ", emailAddress)
+        var stringToCheck = emailAddress.body;
 
-        $.ajax("/", {
-            type: "POST",
-            data: emailAddress
-        }).then(
-            function (data) { }
-        );
+        var $resultText = $("#email-submit-result");
+
+        // add some regex validation to submit the form if a reasonable email address is present
+        if (
+            stringToCheck.match(
+                /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
+            )) {
+            $.ajax("/signup", {
+                type: "POST",
+                data: emailAddress
+            }).then(
+                function (data) { 
+                    $resultText.text("Thanks for signing up for the Cakemix newsletter.");
+                    $emailText.val("");
+                }
+            );
+        }
+        else {
+            event.preventDefault();
+            console.log("nope");
+            $resultText.text("Something went wrong. Check the text you entered or try again later.");
+        }
     });
-
 
 });
