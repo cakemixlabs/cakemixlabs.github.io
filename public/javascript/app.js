@@ -23,7 +23,7 @@ $(document).ready(function () {
 
 
     // set up on click ajax call for submitting email address
-    $("#email-sign-up-button").on("click", function (event) {
+    $("#email-sign-up-button").on("submit", function (event) {
         event.preventDefault();
 
         var emailAddress = {
