@@ -23,15 +23,6 @@ app.use(express.static("public"));
 // set the MongoDB to environment or localhost
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost";
 
-
-// app.get('/', function (req, res) {
-//     res.set({
-//         'Access-Control-Allow-Origin': '*'
-//     });
-//     return res.redirect('/public/index.html');
-// })
-
-
 // create post route for email sign up
 app.post('/signup', function (req, res) {
     // use req.body for the contents of the email
@@ -49,7 +40,7 @@ app.post('/signup', function (req, res) {
         // insert text into database collection
         db.collection("emails").insertOne(email, (err, collection) => {
             if (err) throw err;
-            console.log("Record inserted successfully");
+            console.log("Record inserted successfully ", email);
         });
     });
 
