@@ -21,7 +21,7 @@ app.use(bodyParser.json({
 app.use(express.static("public"));
 
 // set the MongoDB to environment or localhost
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/cakemix";
 
 // create post route for email sign up
 app.post('/signup', function (req, res) {
@@ -30,22 +30,17 @@ app.post('/signup', function (req, res) {
     console.log("email is ", email);
 
     // connect to the database and the collection
+    // this uses v 3 of node.js driver, returning a client instead of the db in a connection 
+    // see https://github.com/mongodb/node-mongodb-native/blob/master/CHANGES_3.0.0.md for details
     mongo.connect(MONGODB_URI, function (err, client) {
         if (err) throw err;
-
-        var db = client.db("cakemix");
-
         console.log("connected to database successfully");
 
         // insert text into database collection
-        db.collection("emails").insertOne(email, (err, collection) => {
+        client.db().collection("emails").insertOne(email, (err, collection) => {
             if (err) throw err;
             console.log("Record inserted successfully ", email);
         });
-    });
-
-    res.set({
-        'Access-Control-Allow-Origin': '*'
     });
 
     return res.sendStatus(200);
