@@ -38,12 +38,14 @@ app.post('/signup', function (req, res) {
 
         // insert text into database collection
         client.db().collection("emails").insertOne(email, (err, collection) => {
-            if (err) throw err;
+            if (err) {
+                console.log(err);
+                return res.json(err);
+            }
             console.log("Record inserted successfully ", email);
+            res.end();
         });
     });
-
-    return res.sendStatus(200);
 
 });
 
