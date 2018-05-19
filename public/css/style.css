@@ -1,29 +1,81 @@
-#contact {
-    background-color: gray;
-}
-
-#email-input-section {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#email-input-box {
-    width: 50%;
+.navbar {
+  background-color: #cefffa !important;
 }
 
 body {
   font-family: 'Nunito', sans-serif;
 }
 
-
-
 .jumbotron {
-  background-color: #ff5555;
+  background-color: #39c9bb;
   color: #ffffff;
   /* background-image: url('../images/g2484.png'); */
+  margin-bottom: 0px;
+}
+
+.jumbo-spacer {
+  min-height: 20px;
 }
 
 #company-name {
   font-weight: bold;
+}
 
+
+#email-overall-area {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+#email-input-section {
+    margin-left: 0px;
+    margin-right: auto;
+    width: 50%;
+}
+
+#email-white-input-area {
+     background-color: #ffffff;
+     color: #000000;
+     float: left;
+     min-width: 400px;
+     min-height: 40px;
+     max-height: 40px;
+}
+
+#email-section {
+  background-color: #1b9b8f;
+  float: right;
+  width: 100px;
+  min-height: 40px;
+  max-height: 40px;
+}
+
+#email-input-box {
+    margin-top: 10px;
+}
+
+#about-section {
+  background-color: #ff5555;
+}
+
+#images-section {
+    height:100px;
+    background-color: #b3b3b3;
+}
+
+#code-image {
+  max-height: 100px;
+}
+
+#team-section {
+    background-color: #ffffff;
+}
+
+#contact-section {
+    background-color: #b3b3b3;
+}
+
+.footer-section {
+  background-color: #7d7d7d;
 }
