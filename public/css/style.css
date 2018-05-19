@@ -10,3 +10,20 @@
 #email-input-box {
     width: 50%;
 }
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+
+
+.jumbotron {
+  background-color: #ff5555;
+  color: #ffffff;
+  /* background-image: url('../images/g2484.png'); */
+}
+
+#company-name {
+  font-weight: bold;
+
+}
