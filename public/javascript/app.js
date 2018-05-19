@@ -1,5 +1,15 @@
 $(document).ready(function () {
 
+    $(document).on("scroll", function (event){
+        $navbar = $("#navbar")
+        var $scrolling = $(document).scrollTop();
+        if ( $scrolling > 50 ){
+            $navbar.addClass("navbar-scrolling");
+        } else {
+            $navbar.removeClass("navbar-scrolling");
+        }
+    });
+
     // add smooth scrolling function to the links (via w3 example)
     $("a").on("click", function (event) {
 

@@ -1,4 +1,9 @@
-.navbar {
+.navbar-scrolling {
+  background-color: yellow !important;
+}
+
+/* set the background color to be opaque when scrolling */
+.navbar-transparent {
   background-color: #cefffa !important;
 }
 
