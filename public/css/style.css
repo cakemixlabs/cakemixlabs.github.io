@@ -65,6 +65,16 @@ body {
   padding-bottom: 30px;
 }
 
+/* Make the images in the about section disappear when the screen is small */
+@media (max-width: 700px) {
+  .about-images {
+    display: none;
+  }
+   #about-section-firstpart-headline {
+    text-align: left !important;
+  }
+}
+
 #images-section {
     height:100px;
     background-color: #b3b3b3;
