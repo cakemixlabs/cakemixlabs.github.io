@@ -32,7 +32,7 @@ $(document).ready(function () {
 
 
     // set up on click ajax call for submitting email address
-    $("#email-input-section").on("submit", function (event) {
+    $("#email-overall-area").on("submit", function (event) {
 
         event.preventDefault();
 
@@ -58,7 +58,7 @@ $(document).ready(function () {
             }).then(
                 function (data) {
                     // show the success text and then fade it out after 3 seconds
-                    $resultText.text("Thanks for signing up for the Cakemix newsletter.").fadeIn().delay(3000).fadeOut();
+                    $resultText.text("Thanks for requesting access. We'll let you know when a beta is available!").fadeIn().delay(3000).fadeOut();
                     // reset the email text to the placeholder
                     $emailText.val("");
                 }

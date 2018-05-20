@@ -34,19 +34,14 @@ body {
     width: 500px;
 }
 
-#email-input-section {
-    margin-left: 0px;
-    margin-right: auto;
-    width: 50%;
-}
-
-#email-white-input-area {
+#email-input-box {
      background-color: #ffffff;
      color: #000000;
      float: left;
      min-width: 400px;
      min-height: 40px;
      max-height: 40px;
+     border-radius: 0;
 }
 
 #email-section {
@@ -55,10 +50,6 @@ body {
   width: 100px;
   min-height: 40px;
   max-height: 40px;
-}
-
-#email-input-box {
-    margin-top: 10px;
 }
 
 #about-section {
