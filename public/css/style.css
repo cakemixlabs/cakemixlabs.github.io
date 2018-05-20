@@ -56,12 +56,16 @@ body {
 }
 
 /* Make the images in the about section disappear when the screen is small */
-@media (max-width: 700px) {
+/* Make the margin on the email sign up back to 0 so they stack */
+@media (max-width: 768px) {
   .about-images {
     display: none;
   }
    #about-section-firstpart-headline {
     text-align: left !important;
+  }
+  #mc-embedded-subscribe {
+    margin-left: 0px !important;
   }
 }
 
