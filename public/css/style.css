@@ -41,7 +41,9 @@ body {
      min-width: 400px;
      min-height: 40px;
      max-height: 40px;
-     border-radius: 0;
+     border-radius: 0px;
+     border: 0px;
+     padding-left: 5px;
 }
 
 #email-section {
@@ -50,6 +52,7 @@ body {
   width: 100px;
   min-height: 40px;
   max-height: 40px;
+  border: 0px;
 }
 
 #about-section {
