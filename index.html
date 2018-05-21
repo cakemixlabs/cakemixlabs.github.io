@@ -16,6 +16,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
 
+    <link href="http://cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+
     <script type="text/javascript" src="javascript/app.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -24,7 +26,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-sm navbar-light bg-light navbar-transparent" id="navbar">
+    <nav class="navbar navbar-expand-sm navbar-light sticky-top" id="navbar">
         <a class="navbar-brand" href="#">Cakemix</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -52,13 +54,26 @@
 
             <p class="jumbo-spacer" />
 
-            <form id="email-overall-area">
-                <label for="email-input-box">Sign up for early access</label>
-                <input name="email" id="email-input-box" type="email" placeholder="Enter your email" aria-label="Email" required>
-                <button class="col" id="email-section" type="submit">Request</button>
+            <!-- Begin MailChimp Signup Form -->
 
-                <p id="email-submit-result"></p>
-            </form>
+            <div id="mc_embed_signup">
+                <form action="https://cakemix.us18.list-manage.com/subscribe/post?u=296d895799d711a816ed20ebb&amp;id=871e8ab156" method="post"
+                    id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                        <label for="mce-EMAIL">Get updates</label>
+                        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                            <input type="text" name="b_296d895799d711a816ed20ebb_871e8ab156" tabindex="-1" value="">
+                        </div>
+                        <div class="clear">
+                            <input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!--End mc_embed_signup-->
 
             <p class="jumbo-spacer" />
 
@@ -99,7 +114,7 @@
                   </p>
                 </div>
 
-          </div>
+            </div>
 
 
 
@@ -128,19 +143,19 @@
                 <p>San Francisco, California</p>
                 <p>
                     <a href="https://twitter.com/cakemixlabs">
-                        <img class="social-media-icon" src="../images/twitter128.png" />
+                        <img class="social-media-icon" src="./images/twitter128.png" />
                     </a>
                     <a href="https://github.com/cakemixlabs">
-                        <img class="social-media-icon" src="../images/github128.png" />
+                        <img class="social-media-icon" src="./images/github128.png" />
                     </a>
                     <a href="https://www.facebook.com/cakemixlabs/">
-                        <img class="social-media-icon" src="../images/facebook128.png" />
+                        <img class="social-media-icon" src="./images/facebook128.png" />
                     </a>
                     <a href="https://www.linkedin.com/company/cakemix/">
-                        <img class="social-media-icon" src="../images/linkedin128.png" />
+                        <img class="social-media-icon" src="./images/linkedin128.png" />
                     </a>
                     <a href="https://angel.co/cakemix">
-                        <img class="social-media-icon" src="../images/angellist128.png" />
+                        <img class="social-media-icon" src="./images/angellist128.png" />
                     </a>
                 </p>
             </div>
