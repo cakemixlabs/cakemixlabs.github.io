@@ -78,6 +78,29 @@ body {
 
 #team-section {
     background-color: #ffffff;
+    padding: 30px 0px 30px 0px;
+}
+
+#team-section-row {
+  min-height: 300px;
+}
+
+.team-photos {
+  width: 50%;
+  padding: 0px 10px 10px 0px;
+}
+
+.team-name-plate {
+  background-color: #cccccc;
+  width: 30%;
+  height: 100px;
+}
+
+#team-rhonda-text {
+  background-color: #cccccc;
+  min-height: 100px;
+  padding: 10px;
+  font-size: 14px;
 }
 
 #contact-section {
