@@ -5,7 +5,7 @@ $(document).ready(function () {
         var $scrolling = $(document).scrollTop();
         if ($scrolling > 50) {
             $navbar.addClass("navbar-scrolling");
-            $navbar.addClass("fixed-top");
+            // $navbar.addClass("fixed-top");
         } else {
             $navbar.removeClass("navbar-scrolling");
             $navbar.removeClass("fixed-top");
