@@ -32,6 +32,10 @@ body {
   width: 100%;
 }
 
+#mc_embed_signup label {
+  font-weight: normal !important;
+}
+
 #mce-EMAIL {
   border-radius: 0px !important;
   border: 0px !important;
