@@ -6,6 +6,14 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
+.row {
+  margin-right: 0px !important;
+}
+
+.container-fluid {
+  padding-right: 0px !important;
+}
+
 .jumbotron {
   background-color: #39c9bb;
   color: #ffffff;
@@ -24,6 +32,8 @@ body {
 #mc_embed_signup {
   clear: left;
   width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 #mc_embed_signup label {
@@ -54,12 +64,14 @@ body {
 }
 
 /* Make the images in the about section disappear when the screen is small */
+
 /* Make the margin on the email sign up back to 0 so they stack */
+
 @media (max-width: 768px) {
   .about-images {
     display: none;
   }
-   #about-section-firstpart-headline {
+  #about-section-firstpart-headline {
     text-align: left !important;
   }
   #mc-embedded-subscribe {
@@ -68,8 +80,8 @@ body {
 }
 
 #images-section {
-    height:100px;
-    background-color: #b3b3b3;
+  height: 100px;
+  background-color: #b3b3b3;
 }
 
 #code-image {
@@ -77,10 +89,9 @@ body {
 }
 
 #team-section {
-    background-color: #ffffff;
-    padding: 30px 0px 30px 0px;
+  background-color: #ffffff;
+  padding: 30px 0px 30px 0px;
 }
-
 
 .team-section-nameplate {
   font-size: 16px;
@@ -103,12 +114,10 @@ body {
 }
 
 #contact-section {
-    background-color: #ff5555;
-    font-weight: bold;
-    color: white;
-
+  background-color: #ff5555;
+  font-weight: bold;
+  color: white;
 }
-
 
 .social-media-icon {
   height: 36px;
@@ -118,9 +127,6 @@ body {
   background-color: #7d7d7d;
   font-size: 12px;
   min-height: 18px;
-  margin-left: -15px;
-    margin-right: -15px;
-
 }
 
 .footer-section {
