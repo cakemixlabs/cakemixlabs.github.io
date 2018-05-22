@@ -81,22 +81,21 @@ body {
     padding: 30px 0px 30px 0px;
 }
 
-#team-section-row {
-  min-height: 300px;
+
+.team-section-nameplate {
+  font-size: 16px;
+  background-color: #cccccc;
+  float: left;
+  width: 50%;
+  height: 100%;
 }
 
 .team-photos {
   width: 50%;
-  padding: 0px 10px 10px 0px;
+  height: 50%;
 }
 
-.team-name-plate {
-  background-color: #cccccc;
-  width: 30%;
-  height: 100px;
-}
-
-#team-rhonda-text {
+.team-section-bio {
   background-color: #cccccc;
   min-height: 100px;
   padding: 10px;
