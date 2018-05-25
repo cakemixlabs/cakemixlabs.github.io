@@ -1,4 +1,13 @@
 $(document).ready(function () {
+  
+  // jQuery to collapse the navbar on scroll
+  $(window).scroll(function() {
+      if ($(".navbar").offset().top > 50) {
+          $(".navbar").addClass("navbar-scroll");
+      } else {
+          $(".navbar").removeClass("navbar-scroll");
+      }
+  });
 
     // add smooth scrolling function to the links (via w3 example)
     $("a").on("click", function (event) {

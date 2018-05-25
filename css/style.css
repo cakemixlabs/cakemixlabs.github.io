@@ -1,5 +1,12 @@
 .navbar {
-  background-color: #cefffa !important;
+  background-color: transparent !important;
+  -webkit-transition: background-color .5s ease-in-out;
+  -moz-transition: background-color .5s ease-in-out;
+  transition: background-color .5s ease-in-out;
+}
+
+.navbar-scroll {
+    background-color: #cefffa !important;
 }
 
 body {
@@ -27,6 +34,7 @@ body {
 
 #company-name {
   font-weight: bold;
+  padding-top: 60px;
 }
 
 #mc_embed_signup {
@@ -67,6 +75,8 @@ body {
 
 /* Make the margin on the email sign up back to 0 so they stack */
 
+/* Add a navbar background-color so it displays over the text when small */
+
 @media (max-width: 768px) {
   .about-images {
     display: none;
@@ -77,6 +87,10 @@ body {
   #mc-embedded-subscribe {
     margin-left: 0px !important;
   }
+  .navbar {
+    background-color: #cefffa !important;
+  }
+  
 }
 
 #images-section {
