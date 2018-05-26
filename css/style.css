@@ -102,9 +102,43 @@ body {
   max-height: 100px;
 }
 
+#team-section-label {
+  background-color: #ffffff;
+  padding: 30px 0px 30px 0px;
+}
+
+#team-label-text {
+  text-align: center;
+}
+
 #team-section {
   background-color: #ffffff;
   padding: 30px 0px 30px 0px;
+}
+
+.team-align-div {
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+#mission-text {
+  padding-top: 25px;
+}
+
+.team-mission-image {
+  padding-bottom: 20px;
+}
+
+.team-member-image {
+  padding-bottom: 20px;
+}
+
+.team-salmon-icon {
+  height: 32px;
+}
+
+.team-member-name {
+  font-size: 22px;
 }
 
 #contact-section {
