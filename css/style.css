@@ -82,6 +82,11 @@ body {
   .mission-section {
     display: none;
   }
+  .not-first-member-image {
+    padding: 30px 30px 20px 30px !important;
+  }
+
+
   #about-section-firstpart-headline {
     text-align: left !important;
   }
@@ -135,7 +140,7 @@ body {
 }
 
 .team-member-image {
-  padding-bottom: 20px;
+  padding: 0px 30px 20px 30px;
 }
 
 .team-salmon-icon {
