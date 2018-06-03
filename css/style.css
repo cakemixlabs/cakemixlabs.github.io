@@ -78,7 +78,8 @@ body {
 /* Add a navbar background-color so it displays over the text when small */
 
 @media (max-width: 768px) {
-  .about-images {
+  .about-images,
+  .mission-section {
     display: none;
   }
   #about-section-firstpart-headline {
