@@ -1,0 +1,173 @@
+.navbar {
+  background-color: transparent !important;
+  -webkit-transition: background-color .5s ease-in-out;
+  -moz-transition: background-color .5s ease-in-out;
+  transition: background-color .5s ease-in-out;
+}
+
+.navbar-scroll {
+    background-color: #cefffa !important;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+.row {
+  margin-right: 0px !important;
+}
+
+.container-fluid {
+  padding-right: 0px !important;
+}
+
+.jumbotron {
+  background-color: #39c9bb;
+  color: #ffffff;
+  background-image: url('../images/cakebridge-bg.png');
+  margin-bottom: 0px;
+}
+
+.jumbo-spacer {
+  min-height: 20px;
+}
+
+#company-name {
+  font-weight: bold;
+  padding-top: 60px;
+}
+
+#mc_embed_signup {
+  clear: left;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+#mc_embed_signup label {
+  font-weight: normal !important;
+}
+
+#mce-EMAIL {
+  border-radius: 0px !important;
+  border: 0px !important;
+  padding-right: 0px !important;
+}
+
+#mc-embedded-subscribe {
+  background-color: #1b9b8f !important;
+  border: 0px !important;
+  border-radius: 0px !important;
+  margin-left: -4px !important;
+}
+
+#about-section {
+  background-color: #1b9b8f;
+  padding: 60px 0px 30px 0px;
+  color: #ffffff;
+}
+
+#about-section-firstpart {
+  padding-bottom: 30px;
+}
+
+/* Make the images in the about section disappear when the screen is small */
+
+/* Make the margin on the email sign up back to 0 so they stack */
+
+/* Add a navbar background-color so it displays over the text when small */
+
+@media (max-width: 768px) {
+  .about-images,
+  .mission-section {
+    display: none;
+  }
+  .not-first-member-image {
+    padding: 30px 30px 20px 30px !important;
+  }
+
+
+  #about-section-firstpart-headline {
+    text-align: left !important;
+  }
+  #mc-embedded-subscribe {
+    margin-left: 0px !important;
+  }
+  .navbar {
+    background-color: #cefffa !important;
+  }
+
+}
+
+#images-section {
+  height: 100px;
+  background-color: #b3b3b3;
+}
+
+#code-image {
+  max-height: 100px;
+}
+
+#team-section-label {
+  background-color: #ffffff;
+  padding: 30px 0px 30px 0px;
+}
+
+#team-label-text {
+  text-align: center;
+}
+
+#team-section {
+  background-color: #ffffff;
+  padding: 30px 0px 30px 0px;
+}
+
+.team-align-div {
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+#mission-text {
+  padding-top: 25px;
+}
+
+.team-mission-image {
+  max-width: 75%;
+  padding-bottom: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 20px;
+}
+
+.team-member-image {
+  padding: 0px 30px 20px 30px;
+}
+
+.team-salmon-icon {
+  height: 24px;
+}
+
+.team-member-name {
+  font-size: 22px;
+}
+
+#contact-section {
+  background-color: #ff5555;
+  font-weight: bold;
+  color: white;
+}
+
+.social-media-icon {
+  height: 36px;
+}
+
+.little-spacer {
+  background-color: #7d7d7d;
+  font-size: 12px;
+  min-height: 18px;
+}
+
+.footer-section {
+  background-color: #7d7d7d;
+  font-size: 12px;
+}
