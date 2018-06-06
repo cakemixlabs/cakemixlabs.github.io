@@ -63,6 +63,12 @@ body {
 
 #about-section {
   background-color: #1b9b8f;
+  padding: 35px 0px 30px 0px;
+  color: #ffffff;
+}
+
+#about-section-small {
+  background-color: #1b9b8f;
   padding: 60px 0px 30px 0px;
   color: #ffffff;
 }
@@ -77,17 +83,17 @@ body {
 
 /* Add a navbar background-color so it displays over the text when small */
 
-@media (max-width: 768px) {
-  .about-images,
+@media (max-width: 767px) {
+  #about-section,
   .mission-section {
     display: none;
   }
+
   .not-first-member-image {
     padding: 30px 30px 20px 30px !important;
   }
 
-
-  #about-section-firstpart-headline {
+  .about-section-firstpart-headline {
     text-align: left !important;
   }
   #mc-embedded-subscribe {
@@ -98,6 +104,15 @@ body {
   }
 
 }
+
+@media (min-width: 768px) {
+  #about-section-small {
+    display:none !important;
+    }
+}
+
+
+
 
 #images-section {
   height: 100px;
